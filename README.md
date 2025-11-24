@@ -394,4 +394,4 @@ SOFTWARE.
 For questions, issues, or feature requests:
 - **GitHub Issues**: [Create an issue](https://github.com/yourusername/telemetry-analysis-tool/issues)
 - **Documentation**: [Read the docs](https://yourusername.github.io/telemetry-analysis-tool/)
-- **Email**: support@example.com
+- **Email**: ChaitanyaNehe@outlook.com
