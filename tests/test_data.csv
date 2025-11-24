@@ -1,0 +1,4 @@
+POSITION,NUMBER,DRIVER,TEAM,VEHICLE,LAPS,TOTAL_TIME,GAP_FIRST,DIFF_PREV,FL_TIME,FL_KPH,STATUS
+1,14,Jack Hawksworth,Vasser Sullivan,Lexus RC F GT3,50,1:30:45.123,, ,1:35.678,160.5,Running
+2,3,Jan Heylen,Wright Motorsports,Porsche 911 GT3 R,50,1:30:50.456,+5.333,+5.333,1:36.123,159.8,Running
+3,93,Racers Edge,Racers Edge,Acura NSX GT3,49,1:31:00.000,+1:14.985,+1 Lap,1:37.000,158.0,Running

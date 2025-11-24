@@ -1,0 +1,17 @@
+site_name: Telemetry Analysis Tool
+theme:
+  name: readthedocs
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+
+nav:
+  - Home: index.md
+  - API Reference:
+      - Core: reference/core.md
+      - AI: reference/ai.md
+      - UI: reference/ui.md

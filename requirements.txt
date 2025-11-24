@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+PyQt6
+matplotlib
+mkdocs
+mkdocstrings[python]
+black
+flake8
+pytest
+pytest-cov
