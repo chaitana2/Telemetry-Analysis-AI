@@ -127,7 +127,7 @@ pip --version
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/telemetry-analysis-tool.git
+   git clone https://https://github.com/chaitana2/Telemetry-Analysis-AI
    cd telemetry-analysis-tool
    ```
 
