@@ -6,24 +6,44 @@ This guide will get you up and running with the Telemetry Analysis Tool in under
 
 - Python 3.8 or higher
 - Git (for cloning)
+- pip (Python package installer)
 
 **Platform-Specific Guides**:
 - [Arch Linux Installation](docs/INSTALL_ARCH.md) - For Arch, Manjaro, EndeavourOS users
 
 ## Installation
 
+### Step 1: Clone the Repository
+
 ```bash
-# Clone the repository
 git clone https://github.com/chaitana2/Telemetry-Analysis-AI.git
 cd Telemetry-Analysis-AI
+```
 
-# Create virtual environment
+### Step 2: Create Virtual Environment
+
+**Linux/macOS:**
+```bash
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
+```
 
-# Install dependencies
+**Windows:**
+```cmd
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Step 3: Install Dependencies
+
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
+**Installation time**: ~2-5 minutes
+
+### Step 4: Verify Installation
 
 ## Quick Test
 
@@ -58,9 +78,22 @@ POSITION,NUMBER,DRIVER,TEAM,VEHICLE,LAPS,TOTAL_TIME,GAP_FIRST,FL_TIME,FL_KPH,STA
 
 **Import Error**: Ensure your CSV has the required columns (POSITION, NUMBER, TOTAL_TIME, etc.)
 
-**UI Not Launching**: Check that PyQt6 is installed: `pip install PyQt6`
+**UI Not Launching**: 
+- Check that PyQt6 is installed: `pip show PyQt6`
+- On Linux, install: `sudo apt install libxcb-xinerama0`
 
-**Tests Failing**: Verify Python version is 3.8+: `python --version`
+**Tests Failing**: 
+- Verify Python version is 3.8+: `python --version`
+- Ensure you're in the virtual environment (look for `(venv)` in prompt)
+- Reinstall dependencies: `pip install -r requirements.txt --force-reinstall`
+
+**Virtual Environment Issues**:
+- Windows PowerShell: Run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+- Make sure you activated the venv before installing packages
+
+**Performance Issues**:
+- Ensure you have at least 4GB RAM available
+- Close other applications when processing large datasets
 
 ## Support
 

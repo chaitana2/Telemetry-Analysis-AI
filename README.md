@@ -112,58 +112,143 @@ Driver is very consistent.
 
 - **Operating System**: 
   - Linux: Ubuntu 20.04+, Fedora 35+, Arch Linux, Manjaro, EndeavourOS
-  - Windows 10+
-  - macOS 11+
-- **Python**: Version 3.8 or higher
+  - Windows 10+ (64-bit)
+  - macOS 11+ (Big Sur or later)
+- **Python**: Version 3.8 or higher (3.10+ recommended)
 - **RAM**: Minimum 4GB (8GB recommended for large datasets)
-- **Disk Space**: 500MB for dependencies
+- **Disk Space**: 500MB for dependencies + 100MB for application
 
 ### Prerequisites
 
 Ensure you have Python and pip installed:
+
+**Linux/macOS:**
 ```bash
 python3 --version  # Should be 3.8+
+pip3 --version
+```
+
+**Windows:**
+```cmd
+python --version  # Should be 3.8+
 pip --version
 ```
 
+**If Python is not installed:**
+- **Ubuntu/Debian**: `sudo apt update && sudo apt install python3 python3-pip python3-venv`
+- **Fedora**: `sudo dnf install python3 python3-pip`
+- **Arch Linux**: See [Arch Installation Guide](docs/INSTALL_ARCH.md)
+- **Windows**: Download from [python.org](https://www.python.org/downloads/)
+- **macOS**: `brew install python3` (requires [Homebrew](https://brew.sh/))
+
 ### Installation Steps
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/chaitana2/Telemetry-Analysis-AI.git
-   cd Telemetry-Analysis-AI
-   ```
+#### 1. Clone the Repository
 
-2. **Create Virtual Environment**
-   ```bash
-   # Linux/Mac
-   python3 -m venv venv
-   source venv/bin/activate
-   
-   # Windows
-   python -m venv venv
-   venv\Scripts\activate
-   ```
+```bash
+git clone https://github.com/chaitana2/Telemetry-Analysis-AI.git
+cd Telemetry-Analysis-AI
+```
 
-3. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-   This installs:
-   - `pandas` & `numpy` - Data processing
-   - `scikit-learn` - Machine learning
-   - `PyQt6` - User interface
-   - `matplotlib` - Visualization
-   - `pytest` & `pytest-cov` - Testing
-   - `black` & `flake8` - Code quality
-   - `mkdocs` & `mkdocstrings` - Documentation
+#### 2. Create Virtual Environment
 
-4. **Verify Installation**
-   ```bash
-   pytest tests/
-   ```
-   All tests should pass.
+**Linux/macOS:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+**Windows (Command Prompt):**
+```cmd
+python -m venv venv
+venv\Scripts\activate
+```
+
+**Windows (PowerShell):**
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+> **Note**: If you get a PowerShell execution policy error, run:
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+> ```
+
+#### 3. Install Dependencies
+
+```bash
+# Upgrade pip first
+pip install --upgrade pip
+
+# Install all dependencies
+pip install -r requirements.txt
+```
+
+**Expected installation time**: 2-5 minutes depending on your internet connection.
+
+**Troubleshooting Installation Issues:**
+
+- **PyQt6 installation fails on Linux**: Install system dependencies first
+  ```bash
+  # Ubuntu/Debian
+  sudo apt install python3-pyqt6 libxcb-xinerama0
+  
+  # Fedora
+  sudo dnf install python3-qt6
+  ```
+
+- **Permission errors**: Don't use `sudo` with pip in a virtual environment
+
+- **Slow installation**: Use a mirror closer to your location
+  ```bash
+  pip install -r requirements.txt -i https://pypi.org/simple
+  ```
+
+#### 4. Verify Installation
+
+```bash
+# Run tests to verify everything is working
+pytest tests/
+
+# Expected output: All tests passed
+```
+
+**If tests fail:**
+1. Ensure you're in the virtual environment (you should see `(venv)` in your prompt)
+2. Verify all dependencies installed: `pip list`
+3. Check Python version: `python --version`
+
+#### 5. Launch the Application
+
+```bash
+python src/main.py
+```
+
+The main window should open. If you encounter any issues, see the [Troubleshooting](#troubleshooting) section below.
+
+---
+
+### Troubleshooting
+
+**Application won't start:**
+- Verify PyQt6 is installed: `pip show PyQt6`
+- Check for error messages in the terminal
+- Try running with verbose output: `python -v src/main.py`
+
+**Import errors:**
+- Ensure you're in the project directory
+- Activate the virtual environment
+- Reinstall dependencies: `pip install -r requirements.txt --force-reinstall`
+
+**Display issues on Linux:**
+- Set Qt platform: `export QT_QPA_PLATFORM=xcb`
+- Install X11 libraries: `sudo apt install libxcb-xinerama0`
+
+For more help, see:
+- [QUICKSTART.md](QUICKSTART.md) - Quick start guide
+- [Arch Linux Guide](docs/INSTALL_ARCH.md) - Arch-specific instructions
+- [GitHub Issues](https://github.com/chaitana2/Telemetry-Analysis-AI/issues/new/choose) - Report problems
 
 ---
 
