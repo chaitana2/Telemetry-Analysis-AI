@@ -28,8 +28,8 @@ A cross-platform telemetry analysis tool for race data, optimized for Toyota's C
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/telemetry-analysis-tool.git
-   cd telemetry-analysis-tool
+   git clone https://github.com/chaitana2/Telemetry-Analysis-AI.git
+   cd Telemetry-Analysis-AI
    ```
 
 2. **Create a virtual environment:**
