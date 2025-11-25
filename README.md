@@ -354,21 +354,70 @@ POSITION,NUMBER,DRIVER,TEAM,VEHICLE,LAPS,TOTAL_TIME,GAP_FIRST,FL_TIME,FL_KPH,STA
 
 ### Running the Test Suite
 
-**Full Test Suite with Coverage**:
+We provide comprehensive testing at multiple levels. For detailed testing instructions, see [docs/TESTING.md](docs/TESTING.md).
+
+**Quick Test:**
+```bash
+# Activate virtual environment
+source venv/bin/activate  # Linux/macOS
+# or venv\Scripts\activate on Windows
+
+# Run all tests
+pytest tests/
+```
+
+**Full Test Suite with Coverage:**
 ```bash
 pytest --cov=src tests/
 ```
 
-**Run Specific Test File**:
+**Expected Output:**
+```
+============ test session starts ============
+collected 6 items
+
+tests/test_ai.py .                    [ 16%]
+tests/test_integration.py ....        [ 83%]
+tests/test_loader.py .                [100%]
+
+============= 6 passed in 1.42s =============
+
+Name                      Stmts   Miss  Cover
+---------------------------------------------
+src/ai/models.py             41      4    90%
+src/core/data_loader.py      55      5    91%
+src/main.py                  13     13     0%
+---------------------------------------------
+TOTAL                       109     22    80%
+```
+
+**Run Specific Test File:**
 ```bash
 pytest tests/test_loader.py -v
 ```
 
-**Generate HTML Coverage Report**:
+**Generate HTML Coverage Report:**
 ```bash
 pytest --cov=src --cov-report=html tests/
-open htmlcov/index.html
+open htmlcov/index.html  # View in browser
 ```
+
+### Test Types
+
+**Unit Tests:**
+- `test_loader.py` - Data loading and preprocessing
+- `test_ai.py` - AI model functionality
+
+**Integration Tests:**
+- `test_integration.py` - End-to-end workflows
+- Data quality and edge cases
+
+**Manual Testing:**
+See [docs/TESTING.md](docs/TESTING.md) for:
+- Application launch testing
+- CSV import testing
+- Data processing verification
+- Error handling scenarios
 
 ### Code Quality Standards
 
@@ -545,6 +594,7 @@ For questions, issues, or feature requests:
 - **Documentation**: See [docs/](docs/) directory for detailed guides:
   - [QUICKSTART.md](QUICKSTART.md) - Quick start guide
   - [ARCHITECTURE.md](docs/ARCHITECTURE.md) - System architecture
+  - [TESTING.md](docs/TESTING.md) - Testing guide
   - [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines
   - [Arch Linux Guide](docs/INSTALL_ARCH.md) - Arch installation
 - **Email**: ChaitanyaNehe@outlook.com
