@@ -335,11 +335,12 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for:
 - Issue reporting process
 
 **Quick Contribution Checklist**:
-- [ ] Code follows PEP 8 (verified with `flake8`)
-- [ ] All functions have docstrings
+- [ ] Code follows PEP 8 (verified with `flake8 src/ tests/`)
+- [ ] All functions have docstrings (PEP 257 compliant)
 - [ ] Tests added for new features
-- [ ] All tests pass (`pytest`)
-- [ ] Code formatted with `black`
+- [ ] All tests pass (`pytest --cov=src tests/`)
+- [ ] Code formatted with `black src/ tests/`
+- [ ] Documentation updated if needed
 
 ---
 
