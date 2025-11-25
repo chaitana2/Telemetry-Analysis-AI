@@ -143,6 +143,37 @@ pip --version
 
 ### Installation Steps
 
+> **Quick Install Option**: We provide automated installation scripts for all platforms!
+> 
+> **Debian/Ubuntu:**
+> ```bash
+> chmod +x install-debian.sh
+> ./install-debian.sh
+> ```
+> 
+> **Arch Linux:**
+> ```bash
+> chmod +x install-arch.sh
+> ./install-arch.sh
+> ```
+> 
+> **macOS:**
+> ```bash
+> chmod +x install-macos.sh
+> ./install-macos.sh
+> ```
+> 
+> **Windows:**
+> ```cmd
+> install-windows.bat
+> ```
+> 
+> The scripts will automatically install all dependencies and set up the environment.
+> 
+> ---
+> 
+> **Manual Installation** (if you prefer step-by-step):
+
 #### 1. Clone the Repository
 
 ```bash

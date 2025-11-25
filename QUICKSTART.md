@@ -11,7 +11,31 @@ This guide will get you up and running with the Telemetry Analysis Tool in under
 **Platform-Specific Guides**:
 - [Arch Linux Installation](docs/INSTALL_ARCH.md) - For Arch, Manjaro, EndeavourOS users
 
-## Installation
+## Quick Install (Automated)
+
+We provide automated installation scripts:
+
+**Debian/Ubuntu:**
+```bash
+./install-debian.sh
+```
+
+**Arch Linux:**
+```bash
+./install-arch.sh
+```
+
+**macOS:**
+```bash
+./install-macos.sh
+```
+
+**Windows:**
+```cmd
+install-windows.bat
+```
+
+## Manual Installation
 
 ### Step 1: Clone the Repository
 
