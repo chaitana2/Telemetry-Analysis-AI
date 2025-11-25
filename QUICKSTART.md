@@ -71,11 +71,30 @@ pip install -r requirements.txt
 
 ## Quick Test
 
+**Launch the application:**
+
+**Linux/Arch:**
+```bash
+./run.sh
+```
+
+**macOS:**
+```bash
+./run-macos.sh
+```
+
+**Windows:**
+```cmd
+run.bat
+```
+
+**Or manually:**
 ```bash
 # Run tests to verify installation
 pytest tests/
 
 # Launch the application
+source venv/bin/activate  # Linux/macOS (venv\Scripts\activate on Windows)
 python src/main.py
 ```
 

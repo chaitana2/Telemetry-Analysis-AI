@@ -287,7 +287,36 @@ For more help, see:
 
 ### Launching the Application
 
+**Quick Launch (Recommended):**
+
+Use the provided launcher scripts that automatically handle virtual environment activation:
+
+**Linux (Debian/Ubuntu/Arch):**
 ```bash
+./run.sh
+```
+
+**macOS:**
+```bash
+./run-macos.sh
+```
+
+**Windows:**
+```cmd
+run.bat
+```
+
+**Manual Launch:**
+
+If you prefer to launch manually:
+
+```bash
+# Activate virtual environment first
+source venv/bin/activate  # Linux/macOS
+# or
+venv\Scripts\activate  # Windows
+
+# Run the application
 python src/main.py
 ```
 
