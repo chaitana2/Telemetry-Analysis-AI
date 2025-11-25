@@ -19,7 +19,7 @@ This project adheres to the [Contributor Covenant](https://www.contributor-coven
 ### Reporting Bugs
 
 **Before Submitting**:
-1. Check the [issue tracker](https://github.com/yourusername/telemetry-analysis-tool/issues) for existing reports
+1. Check the [issue tracker](https://github.com/chaitana2/Telemetry-Analysis-AI/issues) for existing reports
 2. Verify the bug exists in the latest version
 3. Collect relevant information (OS, Python version, error messages)
 
@@ -61,9 +61,9 @@ We welcome feature suggestions! Please:
 
 ```bash
 # Fork the repository on GitHub, then:
-git clone https://github.com/YOUR_USERNAME/telemetry-analysis-tool.git
-cd telemetry-analysis-tool
-git remote add upstream https://github.com/ORIGINAL_OWNER/telemetry-analysis-tool.git
+git clone https://github.com/YOUR_USERNAME/Telemetry-Analysis-AI.git
+cd Telemetry-Analysis-AI
+git remote add upstream https://github.com/chaitana2/Telemetry-Analysis-AI.git
 ```
 
 ### 2. Create a Branch

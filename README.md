@@ -130,8 +130,8 @@ pip --version
 
 1. **Clone the Repository**
    ```bash
-   git clone https://https://github.com/chaitana2/Telemetry-Analysis-AI
-   cd telemetry-analysis-tool
+   git clone https://github.com/chaitana2/Telemetry-Analysis-AI.git
+   cd Telemetry-Analysis-AI
    ```
 
 2. **Create Virtual Environment**
@@ -396,6 +396,10 @@ SOFTWARE.
 ## Support & Contact
 
 For questions, issues, or feature requests:
-- **GitHub Issues**: [Create an issue](https://github.com/ch2aitanya/telemetry-analysis-tool/issues)
-- **Documentation**: [Read the docs](https://yourusername.github.io/telemetry-analysis-tool/)
+- **GitHub Issues**: [Create an issue](https://github.com/chaitana2/Telemetry-Analysis-AI/issues/new/choose)
+- **Documentation**: See [docs/](docs/) directory for detailed guides:
+  - [QUICKSTART.md](QUICKSTART.md) - Quick start guide
+  - [ARCHITECTURE.md](docs/ARCHITECTURE.md) - System architecture
+  - [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines
+  - [Arch Linux Guide](docs/INSTALL_ARCH.md) - Arch installation
 - **Email**: ChaitanyaNehe@outlook.com

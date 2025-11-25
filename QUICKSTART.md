@@ -14,8 +14,8 @@ This guide will get you up and running with the Telemetry Analysis Tool in under
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/telemetry-analysis-tool.git
-cd telemetry-analysis-tool
+git clone https://github.com/chaitana2/Telemetry-Analysis-AI.git
+cd Telemetry-Analysis-AI
 
 # Create virtual environment
 python3 -m venv venv
@@ -64,5 +64,5 @@ POSITION,NUMBER,DRIVER,TEAM,VEHICLE,LAPS,TOTAL_TIME,GAP_FIRST,FL_TIME,FL_KPH,STA
 
 ## Support
 
-- GitHub Issues: [Report a bug](https://github.com/yourusername/telemetry-analysis-tool/issues)
-- Documentation: [Full docs](https://yourusername.github.io/telemetry-analysis-tool/)
+- GitHub Issues: [Report a bug](https://github.com/chaitana2/Telemetry-Analysis-AI/issues/new/choose)
+- Documentation: [Full docs](https://github.com/chaitana2/Telemetry-Analysis-AI/tree/main/docs)
