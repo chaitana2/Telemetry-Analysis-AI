@@ -7,6 +7,9 @@ This guide will get you up and running with the Telemetry Analysis Tool in under
 - Python 3.8 or higher
 - Git (for cloning)
 
+**Platform-Specific Guides**:
+- [Arch Linux Installation](docs/INSTALL_ARCH.md) - For Arch, Manjaro, EndeavourOS users
+
 ## Installation
 
 ```bash

@@ -110,7 +110,10 @@ Driver is very consistent.
 
 ### System Requirements
 
-- **Operating System**: Linux (Ubuntu 20.04+), Windows 10+, or macOS 11+
+- **Operating System**: 
+  - Linux: Ubuntu 20.04+, Fedora 35+, Arch Linux, Manjaro, EndeavourOS
+  - Windows 10+
+  - macOS 11+
 - **Python**: Version 3.8 or higher
 - **RAM**: Minimum 4GB (8GB recommended for large datasets)
 - **Disk Space**: 500MB for dependencies
